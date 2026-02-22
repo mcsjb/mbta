@@ -49,16 +49,21 @@ Allow the user to provide any two stops on the subway lines from question 1, ret
 Use the makefile to run the script to answer the three tech screen questions.
 Give START="Station Name" and STOP="Station Name" as inputs for question 3
 
-```bash
+```
 make tech-screen START='Kenmore' STOP='State'
 ```
 
 Or use the command directly:
 
-```bash
-cd main
-python main.py --start "Downtown Crossing" --stop "Alewife"
 ```
+cd main
+python main.py tech-screen --start "Downtown Crossing" --stop "Alewife"
+```
+list stops available for question 3:
+```
+make stops
+```
+
 
 ### Example invocations
 
@@ -110,5 +115,5 @@ make test
 
 This project uses Black for code formatting:
 ```
-make black
+make lint
 ```
